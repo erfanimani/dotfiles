@@ -4,6 +4,9 @@ export PATH="$HOME/bin:$PATH"
 # Add `~/.gems/bin` to the `$PATH`
 export PATH="$HOME/.gems/bin:$PATH"
 
+# Add `~/Library/Python/3.7/bin` to the `$PATH`, warden.dev recommends installing docker-compose through pip3
+export PATH="$HOME/Library/Python/3.7/bin:$PATH"
+
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
@@ -51,6 +54,3 @@ fi
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
 
-# Automatically added by Platform.sh CLI installer
-export PATH="/Users/erfan/.platformsh/bin:$PATH"
-. '/Users/erfan/.platformsh/shell-config.rc' 2>/dev/null
